@@ -1,0 +1,55 @@
+.container {
+  height: 250px; /* Высота контейнера */
+  width: 350px; /* Ширина контейнера */
+  margin-top: 40px;
+  border: 1px solid #ccc; /* Граница контейнера */
+  border-radius: 10px; /* Закругленные углы */
+  padding: 20px; /* Отступы внутри контейнера */
+  background-color: #f9f9f9; /* Цвет фона контейнера */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+  overflow: hidden; /* Скрыть переполнение, если текст выходит за границы */
+}
+
+.container-title {
+  font-size: 24px; /* Размер шрифта заголовка */
+  margin-bottom: 15px; /* Отступ снизу */
+  color: #333; /* Цвет заголовка */
+}
+
+.container-button {
+  display: block; /* Кнопка занимает всю ширину */
+  margin: 10px 0; /* Отступы сверху и снизу */
+  padding: 10px 15px; /* Отступы внутри кнопки */
+  background-color: #007bff; /* Синий цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  border: none; /* Без границы */
+  border-radius: 10px; /* Закругленные углы кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s; 
+}
+
+.container-button:hover {
+  background-color: #0056b3; /* Темнее синий цвет фона кнопки при наведении */
+}
+
+.small-texts-container {
+  display: flex; /* Используем Flexbox для расположения маленьких текстов */
+  justify-content: space-between; /* Распределяем пространство между двумя группами */
+  margin-top: 10px; /* Отступ сверху для маленьких текстов */
+}
+
+.left-texts {
+  display: flex; /* Используем Flexbox для вертикального расположения текстов слева */
+  flex-direction: column; /* Располагаем маленькие тексты вертикально */
+}
+
+.right-texts {
+  display: flex; /* Используем Flexbox для вертикального расположения текстов справа */
+  flex-direction: column; /* Располагаем маленькие тексты вертикально */
+}
+
+.container-label {
+  font-size: 16px; /* Размер шрифта для маленьких текстов */
+  color: #0390D5; /* Синий цвет текста маленьких текстов */
+  margin: 4px 20px; /* Отступы между маленькими текстами */
+}

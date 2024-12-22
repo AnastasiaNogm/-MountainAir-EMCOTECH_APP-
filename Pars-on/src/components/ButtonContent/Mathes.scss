@@ -1,0 +1,53 @@
+:root {
+    --btn-horizontal-spacing: 10px; /* Горизонтальный отступ между кнопками */
+    --btn-vertical-spacing: 10px; /* Вертикальный отступ кнопок */
+    --btn-padding: 20px; /* Отступы внутри кнопок */
+    --btn-height: 35px; /* Высота кнопок */
+    --btn-width: 80px; /* Ширина кнопок */
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-wrapper {
+    margin-right: var(--btn-horizontal-spacing); /* Отступ между кнопками */
+}
+
+.btn-wrapper:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+/* Стали кнопок */
+.btn {
+    display: flex; /* Используем flexbox для кнопок */
+    align-items: center; /* Центрируем вертикально */
+    justify-content: center; /* Центрируем горизонтально */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: var(--btn-padding); /* Увеличенный отступ */
+    border: none;
+    border-radius: 15px; /* Углы кнопок */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Плавные переходы */
+    background-color: lightgray; /* Серый фон для стандартных состояний */
+    color: #ee7b1d; /* Цвет текста по умолчанию */
+    height: var(--btn-height); /* Высота кнопок */
+    width: var(--btn-width); /* Ширина кнопок */
+    margin: var(--btn-vertical-spacing) auto; /* Центрирование и отступы */
+}
+
+.btn-active {
+    background-color: #ee7b1d; /* Красный цвет для активной кнопки */
+    color: #ffffff; /* Белый текст для активной кнопки */
+}
+
+.btn-inactive {
+    background-color: #cecece; /* Серый фон для неактивных кнопок */
+    color: #ee7b1d; /* Красный текст для неактивных кнопок */
+}
+
+/* Эффект при наведении */
+.btn:hover {
+    background-color: #ee7b1d; /* Красный фон при наведении */
+    color: #ffffff; /* Белый текст при наведении */
+}
