@@ -1,0 +1,13 @@
+.header-box2 {
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 55px;
+    margin: 30px auto; /* Центрирование и отступы */
+    background-color: #0390D5; /* Постоянный цвет фона */
+}

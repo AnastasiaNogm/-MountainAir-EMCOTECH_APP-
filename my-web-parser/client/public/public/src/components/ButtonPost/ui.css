@@ -1,0 +1,44 @@
+.btn-lg {
+    position: relative; /* Set position: relative for positioning image and text */
+    padding: 0; /* Remove button padding */
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align image vertically */
+    justify-content: center; /* Align image horizontally */
+    border: none; /* Remove default button border */
+    border-radius: 20px; /* Rounded corners, make it more oval */
+    width: 200px; /* Button width */
+    height: 200px; /* Button height (can make it more round */
+    cursor: pointer; /* change cursor style */
+    transition: background-color 0.3s, transform 0.1s; /* add transition for background and transform */
+    margin: 20px; /* Add 20px margin */
+    overflow: hidden;  /* Hide overflow content (to handle image overflow) */
+}
+
+/* Styles for the button on hover */
+.btn-lg:hover {
+    transform: scale(1.1); /* Increase the button size */
+}
+
+/* Styles for image inside button */
+.btn-lg img {
+    width: 100%; /* Image width fills 100% of the button */
+    height: 100%; /* Image height fills 100% of the button */
+    object-fit: cover; /* Image cover all the button*/
+}
+
+/* Styles for text inside button */
+.btn-lg .button-text {
+    position: absolute; /* Absolute position of the text */
+    bottom: 10px; /* Position text 10px from the bottom */
+    left: 10px; /* Position text 10px from the left */
+    color: white; /* Text color */
+    font-size: 1.5em;  /* Text size */
+    padding: 5px;
+    font-weight: bold; /* Make text bold */
+    text-shadow: 2px 2px 4px #000000; /* Adding a text shadow to make it readable on different images */
+    letter-spacing: 1px; /* Letter spacing for better readability */
+}
